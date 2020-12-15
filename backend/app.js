@@ -35,9 +35,7 @@ app.use("/api", userRoutes);
 app.use("/api", categoryRoutes);
 app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
-if(process.env.ENVIRONMENT === "PRODUCTION"){
-    app.get("/*", (req,res) => console.log(req.connection.remoteAddress + " => " + req.originalUrl));
-}
+
 
 //PORT
 const port = process.env.PORT || 8000;
