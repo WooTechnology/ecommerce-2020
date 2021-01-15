@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
+import logo from "../assets/logo.png";
 import { withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth/helper";
 import { Navbar, Nav } from "react-bootstrap";
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#2CD47D" };
+    return { color: "#2CD47D", fontFamily: "Yusei Magic", fontWeight: 700 };
   } else {
     return { color: "#FFFFFF" };
   }
@@ -15,11 +16,14 @@ const Menu = ({ history }) => (
   <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand style={currentTab(history, "/")} href="/" title="Home">
-        <i class="fa fa-home" aria-hidden="true"></i>
+        <img src={logo} className="d-inline-block mx-auto"/> Ecommerce App
+        {/* <i class="fa fa-home" aria-hidden="true"></i> */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="">
+        <Nav.Link style={currentTab(history)}><b>Today's Deals&nbsp;&nbsp;</b></Nav.Link>
+        <Nav.Link style={currentTab(history)}><b>Best Sellers&nbsp;&nbsp;</b></Nav.Link>
           <Nav.Link
             style={currentTab(history, "/ourproducts")}
             href="/ourproducts"
