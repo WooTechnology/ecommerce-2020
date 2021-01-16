@@ -1,0 +1,47 @@
+.btn,
+.jumbotron,
+.nav :hover {
+	border-radius: 0px;
+}
+
+body {
+	background: #ffffff;
+}
+
+/* Links on the button including collapsable-card-header */
+.btn-link{
+  display: flex;
+  text-decoration: none;
+  color:grey;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn-link:focus,
+.btn-link:hover{
+  text-decoration: none;
+}
+.btn-link span {
+  width: 7rem;
+}
+
+/* Font awesome Icon Default styling */
+.fa-angle-up{
+  transform: rotate(180deg);
+  font-size: 2rem;
+  color: lightgrey; /* Bootstrap info color*/
+  transition: transform 200ms ease-in;
+}
+
+.collapsed .fa-angle-up{
+  color: lightgrey;
+  transform: rotate(90deg);
+}
+
+.container{
+  min-height: 80vh;
+}
+
+footer{
+  
+  bottom:0;
+}
