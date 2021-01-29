@@ -1,9 +1,10 @@
 # Ecommerce-2020
+ This repository contains the code for a MERN based e-commerce webapp:
+ 
 ## Prerequisites:
 - Install Mongodb & Robo3T
 - Install React
 
-Contains the code for a MERN based e-commerce webapp:
 ## For the backend:
 To get deeper insight of the Backend of our Project Ecommerce have a look at the following steps:
 - Download the code folder from GitHub
