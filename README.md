@@ -25,7 +25,7 @@ We'll see that the backend server is running at localhost:8000.
 
 ![22](https://user-images.githubusercontent.com/61888364/106319849-14e47680-6298-11eb-9ba5-7ba9193595fd.jpeg)
 
-- Now, open the command prompt for the frontend folder and run "install npm"
+- Now, open the command prompt for the frontend folder and run "npm install"
 - Now, run "npm start"
 - This will automatically start the deployment server
 Below screen will show up automatically:
